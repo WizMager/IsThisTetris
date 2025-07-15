@@ -11,7 +11,8 @@ namespace Authoring
             public override void Bake(BlockAuthoring authoring)
             {
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
-                AddComponent<BlockTagComponent>(entity);
+                AddComponent<BlockComponent>(entity);
+                AddComponent<BlockColorComponent>(entity);
             }
         }
     }
